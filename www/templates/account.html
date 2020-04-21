@@ -1,0 +1,30 @@
+<ion-modal-view>
+  <ion-content>
+  <div class="list accountDiv">
+    <h4 class="title">Your Account</h4>
+    <div class="buttons">
+      <button class="button button-clear closeAccountButton" ng-click="closeAccount()">Close</button>
+    </div>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Username: {{user.username}}</span>
+        <input type="text" placeholder={{user.username}}>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Full Name: {{user.name}}</span>
+        <input type="text" placeholder={{user.name}}>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email: {{user.email}}</span>
+        <input type="text" placeholder={{user.email}}>
+      </label>
+    <button class="button button-block button-royal saveChangesButton">
+      Save Changes
+    </button>
+    <button class="button button-block button-assertive deleteAccountButton">
+      Delete Account
+    </button>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

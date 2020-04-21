@@ -1,0 +1,18 @@
+<ion-modal-view>
+    <ion-content>
+    <div class="friendRequestsDiv">
+    <h4 class="title">Your Friend Requests</h4>
+    <div class="buttons">
+      <button class="button button-clear closeFriendRequests" ng-click="closeFriendRequests()">Close</button>
+    </div>
+  
+    <ion-list>
+      <ion-item ng-repeat="friendRequest in friendRequests | orderBy:'username'">
+        {{friendRequest.username}}
+        <deny-request friendRequestId= {{friendRequest.id}}></deny-request>
+        <accept-request ftcid={{friendRequest.user1id}} friendRequestId= {{friendRequest.id}} username={{friendRequest.username}}></accept-request>
+      </ion-item>
+    </ion-list>
+  </div>
+  </ion-content>
+</ion-modal-view>

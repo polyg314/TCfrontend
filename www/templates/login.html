@@ -1,0 +1,15 @@
+<ion-modal-view>
+<ion-content id="loginModal">
+<h1 id="closeLogin" ng-click="closeLogin()">X</h1>
+<h1>Sign in</h1>
+
+
+<form ng-submit="vm.login(vm.username, vm.password)">
+    <label>Username or email: 
+    <input class="form-control loginInputs" type="text" ng-model="vm.username"/></label><br/>
+    <label>Password: 
+    <input class="form-control loginInputs" type="password" ng-model="vm.password"/></label><br/>
+    <button id="finalLogin" type="submit">Login</button>
+</form>
+</ion-content>
+</ion-modal-view>

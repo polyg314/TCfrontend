@@ -1,0 +1,15 @@
+
+<div class="row" id="mainTabDiv">
+  <div id="songFeedTab" class="tabs onBaby col" ng-class="{ active:tab.isSet(1) }">
+    <p ng-click="tab.setTab(1)">Feed <div class="newSongsPill" ng-show="newSongs">{{newSongs}}</div></p>
+  </div>
+
+  <div id="favoriteTab" class="tabs offBaby  col" ng-class="{ active:tab.isSet(2) }">
+    <p ng-click="tab.setTab(2)">Favs</p>  
+    <ion-toggle class="tcsc" ng-model="scFavorites" toggle-class="toggle-energized"><span id="tcToggle" ng-hide="scFavorites">TC</span><span id="scToggle" ng-show="scFavorites">SC</span></ion-toggle>
+  </div>
+  <div id="searchTab" class="tabs offBaby col" ng-class="{ active:tab.isSet(3) }">
+    <p ng-click="tab.setTab(3)">Search</p>
+  </div>  
+</div>
+
