@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "TuneCoop: A music sharing service",
   "engines": {
-    "node": "12.x"
+    "node": "10.x"
   },
   "dependencies": {
     "gulp": "^3.5.6",
